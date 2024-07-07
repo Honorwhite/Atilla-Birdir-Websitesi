@@ -7353,7 +7353,7 @@ i {
   display: flex;
   align-items: center;
   gap: 31px;
-  animation: textScrolling 28s linear infinite;
+  animation: textScrolling 4s linear infinite;
   animation-direction: reverse;
   will-change: transform;
   position: relative;
