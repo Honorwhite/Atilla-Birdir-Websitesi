@@ -8917,7 +8917,7 @@ i {
 # Blog Details Page
 -------------------------------------*/
 .blog-details-page {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 120px;
   background-color: var(--atilla-white, #FFFFFF);
 }
