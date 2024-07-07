@@ -481,9 +481,9 @@
 
   function thmOwlInit() {
     // owl slider
-    let digihubowlCarousel = $(".digihub-owl__carousel");
-    if (digihubowlCarousel.length) {
-      digihubowlCarousel.each(function () {
+    let atillaowlCarousel = $(".atilla-owl__carousel");
+    if (atillaowlCarousel.length) {
+      atillaowlCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
@@ -491,9 +491,9 @@
         );
       });
     }
-    let digihubowlCarouselNav = $(".digihub-owl__carousel--custom-nav");
-    if (digihubowlCarouselNav.length) {
-      digihubowlCarouselNav.each(function () {
+    let atillaowlCarouselNav = $(".atilla-owl__carousel--custom-nav");
+    if (atillaowlCarouselNav.length) {
+      atillaowlCarouselNav.each(function () {
         let elm = $(this);
         let owlNavPrev = elm.data("owl-nav-prev");
         let owlNavNext = elm.data("owl-nav-next");
@@ -520,12 +520,12 @@
   }
 
   /*-- Hover Tilt --*/
-  let digihubTiltElm = $(".digihub-tilt");
-  if (digihubTiltElm.length) {
-    digihubTiltElm.each(function () {
+  let atillaTiltElm = $(".atilla-tilt");
+  if (atillaTiltElm.length) {
+    atillaTiltElm.each(function () {
       let self = $(this);
       let options = self.data("tilt-options");
-      let digihubTilt = self.tilt(
+      let atillaTilt = self.tilt(
         "object" === typeof options ? options : JSON.parse(options)
       );
     });
@@ -579,7 +579,7 @@
     thmTinyInit();
 
     // Image Hover Effect
-    Array.from(document.querySelectorAll(".digihub-image-hover")).forEach(
+    Array.from(document.querySelectorAll(".atilla-image-hover")).forEach(
       (e) => {
         const imgs = Array.from(e.querySelectorAll("img"));
         const displacementImage = e.dataset.hoverImage;
