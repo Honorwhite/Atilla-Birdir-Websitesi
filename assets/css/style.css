@@ -945,7 +945,7 @@ i {
   display: inline-block;
   width: 45px;
   height: 45px;
-  background: var(--digihub-special, #ff0000);
+  background: #25D366;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -965,12 +965,10 @@ i {
   color: var(--digihub-white, #FFFFFF);
   font-size: 18px;
   line-height: 45px;
-  -webkit-animation: updown 2.5s infinite;
-  animation: updown 2.5s infinite;
 }
 
 .scroll-to-top:hover {
-  background-color: var(--digihub-base, #EA4723);
+  background-color: #128C7E;
 }
 
 .scroll-to-top:hover i {
@@ -3008,7 +3006,7 @@ i {
 .page-header {
   padding: 261px 0 150px;
   position: relative;
-  background: linear-gradient(180deg, rgba(var(--digihub-special-rgb, 142, 197, 87), 0.33) 0%, rgba(var(--digihub-special-rgb, 142, 197, 87), 0) 100%);
+  background: linear-gradient(180deg, rgba(36, 132, 196, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 767px) {
