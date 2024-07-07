@@ -1140,7 +1140,7 @@ i {
   transform: translateY(10%);
   background: var(--atilla-linear-gradient-bg-special);
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
   transition: opacity 400ms ease, transform 400ms ease, visibility 400ms ease;
 }
 
@@ -1160,7 +1160,7 @@ i {
 }
 
 .team-single__name {
-  font-size: var(--atilla-size-5xl);
+  font-size: var(--atilla-size-3xl);
   color: var(--atilla-white, #FFFFFF);
   line-height: 1.5;
   letter-spacing: -0.5px;
@@ -8328,11 +8328,15 @@ i {
 .blog-two {
   padding-bottom: 120px;
   background-color: var(--atilla-white3, #F6F6F6);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 575px) {
   .blog-two {
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -10364,3 +10368,40 @@ i {
 }
 
 /*# sourceMappingURL=atilla.css.map */
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.team-single {
+  opacity: 0;
+  /* Başlangıçta görünmez */
+}
+
+.team-single.slide-in-left {
+  animation: slideInFromLeft 1.5s forwards;
+}
+
+.team-single.slide-in-right {
+  animation: slideInFromRight 1.5s forwards;
+}

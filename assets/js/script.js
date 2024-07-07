@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-
   if ($(".countdown-one__list").length) {
     let deadLine = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
     $(".countdown-one__list").countdown({
@@ -22,7 +21,6 @@
       }
     });
   }
-
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function () {
       var target = $(this).attr("data-target");
@@ -645,6 +643,7 @@
         return false;
       });
     }
+
 
     if ($(".post-filter.has-dynamic-filter-counter").length) {
       // var allItem = $('.single-filter-item').length;
