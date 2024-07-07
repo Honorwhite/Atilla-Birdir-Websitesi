@@ -288,6 +288,32 @@
     <!-- template js -->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/e56a95f4fc.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const teamItems = document.querySelectorAll('.team-single');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Öğenin %10'u görünür olduğunda tetiklenir
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const item = entry.target;
+                        const randomDirection = Math.random() < 0.5 ? 'slide-in-left' : 'slide-in-right';
+                        item.classList.add(randomDirection);
+                        observer.unobserve(item); // Gözlemi durdur
+                    }
+                });
+            }, observerOptions);
+
+            teamItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
 </body>
 
 </html>
