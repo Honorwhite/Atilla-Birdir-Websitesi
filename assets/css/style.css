@@ -9458,7 +9458,7 @@ i {
 }
 
 .contact-page__info-box:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .contact-page__info-box::after {
@@ -10404,4 +10404,8 @@ i {
 
 .team-single.slide-in-right {
   animation: slideInFromRight 1.5s forwards;
+}
+
+.contact-page__info-row {
+  margin: 0;
 }
