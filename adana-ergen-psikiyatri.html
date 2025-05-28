@@ -56,42 +56,6 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .preloader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.5s ease-out;
-        }
-
-        .preloader.fade-out {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .preloader__image {
-            width: 55px;
-            height: 55px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
 </head>
 
 <body class="custom-cursor">
@@ -262,7 +226,7 @@
                                             Psikiyatri</a>
                                     </li>
                                     <li class="service-details-page__service-list-item">
-                                        <a href="Adana-psikiyatrist.html"
+                                        <a href="adana-psikiyatrist.html"
                                             class="service-details-page__service-list-link">Adana Psikiyatrist</a>
                                     </li>
                                 </ul>
@@ -391,53 +355,60 @@
         </footer><!-- /.footer-two -->
         <!-- Footer Two End -->
     </div><!-- /.page-wrapper -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-angle-up"></i></a>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155"
+                        alt="Dr. Atilla Birdir"></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@atillabirdir.com">info@atillabirdir.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:05465120728">0546 512 07 28</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href="https://www.instagram.com/dratillabirdir/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 
-    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <a href="https://wa.me/+905465180728" class="scroll-to-target scroll-to-top"><i
+            class="fa-brands fa-whatsapp"></i></a>
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
     <script src="assets/vendors/jarallax/jarallax.min.js"></script>
     <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
     <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
     <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
     <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
     <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/countdown/countdown.min.js"></script>
     <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
-    <script src="assets/js/atilla.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Hide preloader when page is loaded
-            window.addEventListener('load', function () {
-                const preloader = document.querySelector('.preloader');
-                if (preloader) {
-                    preloader.classList.add('fade-out');
-                    setTimeout(function () {
-                        preloader.style.display = 'none';
-                    }, 500);
-                }
-            });
-
-            // Fallback to hide preloader after 3 seconds
-            setTimeout(function () {
-                const preloader = document.querySelector('.preloader');
-                if (preloader) {
-                    preloader.classList.add('fade-out');
-                    setTimeout(function () {
-                        preloader.style.display = 'none';
-                    }, 500);
-                }
-            }, 3000);
-        });
-    </script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/tilt/tilt.jquery.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/gsap/three.min.js"></script>
+    <script src="assets/vendors/gsap/hover.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e56a95f4fc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
