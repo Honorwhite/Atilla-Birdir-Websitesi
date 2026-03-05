@@ -10409,3 +10409,13 @@ i {
 .contact-page__info-row {
   margin: 0;
 }
+
+.team-single-link {
+    display: block;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.team-single-link:hover {
+    text-decoration: none !important;
+}
